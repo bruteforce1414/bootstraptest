@@ -36,16 +36,32 @@
         $('#summernote').summernote();
     });
 </script>
-<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-2 col-lg-2 mr-0 px-3" href="#">Test site</a>
-    <a class="navbar-brand col-md-1 col-lg-2 mr-0 px-3" href="#">0</a>
-    <a class="navbar-brand col-md-1 col-lg-2 mr-0 px-3" href="#">New</a>
-    <a class="navbar-brand col-md-1 col-lg-2 mr-0 px-3" href="#">Clear Cache</a>
-    <a class="navbar-brand col-md-1 col-lg-2 mr-0 px-3" href="#">Nowdy, testAdmin</a>
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
-            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#">Test site</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="//codeply.com">0</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Add New</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Clear Cache</a>
+            </li>
+            <li class="nav-item w-25">
+                <a class="nav-link active" href="#">Nowdy, testadmin</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div class="container-fluid">
     <div class="row">
@@ -352,16 +368,17 @@
 
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                      data-parent="#accordion">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
+                                    <button type="button" class="btn btn btn-secondary">Save draft</button>
+                                    <button type="button" class="btn btn btn-secondary">Preview</button>
+                                    <p></p>
+
+                                    Status: Draft   <a href="#"> <u>Edit</u></a>
+                                    <p></p>
+                                    Visibility: Public <a href="#"><u>Edit</u></a>
+                                    <p></p>
+
+                                    Publish: Immediately <a href="#"> <u>Edit</u></a>
+
                                 </div>
                             </div>
                             <div class="card">
@@ -376,15 +393,35 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <label class="form-check-label" for="inlineRadio1">Standard</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                    <label class="form-check-label" for="inlineRadio2">Aside</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Image</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio3">Video</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio3">Quote</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio3">Link</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7">
+                                    <label class="form-check-label" for="inlineRadio3">Gallery</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8">
+                                    <label class="form-check-label" for="inlineRadio3">Audio</label>
                                 </div>
                             </div>
                         </div>
